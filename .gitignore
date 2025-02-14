@@ -1,0 +1,20 @@
+# Ignore compiled class files
+*.class
+
+# Ignore IDE project files
+*.idea/
+*.vscode/
+
+# Ignore build outputs
+target/
+node_modules/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variable files
+*.env
+
+# Ignore log files
+*.log

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>EmployeeManagement</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>EmployeeManagement</name>
+	<description>Employee Management System</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	
+	<dependencies>
+
+<!-- Spring Data JPA Dependency -->	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+<!-- Spring Web Dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+<!-- Spring DevTools -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+<!-- MySQL Connector Dependency -->
+		<dependency>
+    		<groupId>com.mysql</groupId>
+   			<artifactId>mysql-connector-java</artifactId>
+    		<version>9.2.0</version>
+		</dependency>
+		
+<!-- Spring Boot Starter Test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+<!-- jakarta persistence Dependency -->		
+		<dependency>
+    		<groupId>jakarta.persistence</groupId>
+    		<artifactId>jakarta.persistence-api</artifactId>
+   			<version>3.1.0</version>  
+		</dependency>
+		
+<!-- Hibernate Validator Dependency (utk Jakarta Validation) -->	
+		<dependency>
+   			<groupId>org.hibernate.validator</groupId>
+  			<artifactId>hibernate-validator</artifactId>
+  			<version>8.0.0.Final</version>
+		</dependency>
+		
+<!-- Lombok Dependency -->			
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		
+<!-- JasperReports Dependency -->		
+		<dependency>
+		    <groupId>net.sf.jasperreports</groupId>
+		    <artifactId>jasperreports</artifactId>
+		    <version>7.0.1</version>
+		</dependency>
+		
+		<dependency> <!-- metadata -->
+		    <groupId>net.sf.jasperreports</groupId>
+		    <artifactId>jasperreports-metadata</artifactId>
+		    <version>7.0.1</version>
+		</dependency>
+		
+		<dependency> <!-- jackson core read data from JSON/XML files -->
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.18.2</version>
+		</dependency>
+
+		<dependency> <!-- jackson annotations read data from JSON/XML files -->
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>2.18.2</version>
+		</dependency>
+
+		<dependency> <!-- jackson databind read data from JSON/XML files -->
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.18.2</version>
+		</dependency>
+		
+		<dependency> <!-- jackson dataformat read data from JSON/XML files -->
+		    <groupId>com.fasterxml.jackson.dataformat</groupId>
+		    <artifactId>jackson-dataformat-xml</artifactId>
+		    <version>2.18.2</version>
+		</dependency>
+
+		<dependency> <!-- handle dynamic data binding in reports -->
+		    <groupId>commons-beanutils</groupId>
+		    <artifactId>commons-beanutils</artifactId>
+		    <version>1.10.0</version>
+		</dependency>
+
+			<dependency> <!-- for proper error handling & logging during runtime -->
+			    <groupId>commons-logging</groupId>
+			    <artifactId>commons-logging</artifactId>
+			    <version>1.3.5</version>
+			</dependency>
+
+			<dependency> <!-- manage collections used in the report generation process -->
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-collections4</artifactId>
+			    <version>4.4</version>
+			</dependency>
+			
+			<dependency> <!-- for report generation process -->
+			    <groupId>net.sf.jasperreports</groupId>
+			    <artifactId>jasperreports-fonts</artifactId>
+			    <version>7.0.1</version>
+			</dependency>
+			
+			<dependency> <!-- for report generation process -->
+			    <groupId>net.sf.jasperreports</groupId>
+			    <artifactId>jasperreports-pdf</artifactId>
+			    <version>7.0.1</version>
+			</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
